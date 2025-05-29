@@ -1,14 +1,22 @@
 /* ======= Stile Classico e Sobrio ======= */
+:root {
+  --por: #880093;
+  --por_titoli: #44263F;
+  --avorio: #F5F5DC;
+}
+
 body {
     max-width: 750px;
     margin: 50px auto;
     padding: 40px;
-    background-color: #F5F5DC;    /* Avorio neutro (tipo papiro) */
+    background-color: var(--avorio);    /* Avorio neutro (tipo papiro) */
     color: #1A0D0D;               /* Testo nero (inchiostro) */
-    font-family: "Garamond", "Georgia", serif;
+    /*font-family: "Garamond", "Georgia", serif;*/
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
     line-height: 1.6;
-    border: 6px double #66023C;   /* Bordi porpora (stile pergamena) */
-    box-shadow: 0 0 20px rgba(102, 2, 60, 0.4); /* Ombra porpora leggera */
+    border: 10px double var(--por);   /* Bordi porpora (stile pergamena) */
+    /*box-shadow: 0 0 20px rgba(102, 2, 60, 0.4); /* Ombra porpora leggera */*/
 }
 
 /* ======= Testo ======= */
@@ -18,8 +26,8 @@ p {
     text-indent: 2em; /* Rientro classico */
 }
 
-h1, h2 {
-    color: #66023C; /* Porpora nei titoli */
+h1, h2, h3 {
+    color: var(--por_titoli); /* Porpora nei titoli */
     font-weight: bold;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
@@ -27,6 +35,7 @@ h1, h2 {
 
 h1 {
     font-size: 2em;
+    font-weight: bold;
 }
 
 h2 {
@@ -62,7 +71,7 @@ ul, ol {
 }
 
 blockquote {
-    border-left: 3px solid #66023C;
+    border-left: 3px solid var(--por);
     padding-left: 1em;
     color: #3a2d2d;
     font-style: italic;
