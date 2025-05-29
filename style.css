@@ -1,4 +1,17 @@
 /* ======= Stile Classico e Sobrio ======= */
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700; /* Gamma di pesi */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('fonts/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+}
 :root {
   --por: #880093;
   --por_titoli: #44263F;
@@ -12,8 +25,8 @@ body {
     background-color: var(--avorio);    /* Avorio neutro (tipo papiro) */
     color: #1A0D0D;               /* Testo nero (inchiostro) */
     /*font-family: "Garamond", "Georgia", serif;*/
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-
+     font-family: 'EB Garamond', serif;
+     font-size: 20px;
     line-height: 1.6;
     border: 10px double var(--por);   /* Bordi porpora (stile pergamena) */
     /*box-shadow: 0 0 20px rgba(102, 2, 60, 0.4); /* Ombra porpora leggera */*/
