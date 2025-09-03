@@ -21,23 +21,20 @@ body{
 	<h2>La soluzione geniale</h2>
 	<p>Il nonio fu ideato da Nunes, portoghese, e poi perfezionato da Vernier, matematico francese del '600, che lo applicò al calibro, che in suo nome si chiama verniero o più semplicemente calibro a nonio (scorrettamente detto nonio). Si ma cos'è il nonio? Nomen omen si potrebbe dire.
 	Il nonio è una scala secondaria del calibro a corsoio, che si adagia e scorre sulla scala principale P (la scala principale, d'ora in poi detta P, è una semplice scala di regolo, poniamo, con poca ragione della storicità, in mm). La scala del nonio N è come un piccolo regolo, ma non misura direttamente lunghezze, le sue tacche non sono in mm, ma generalmente sono un multiplo frazionario proprio della scala P.<br>
+	P := IIIIIIIIIIIIIIIIIIIIIIII <br>
+	N := iiiiiiiii <br>
+	Questa è una rappresentazione della situazione.
+	Ma come funziona esattamente. Se si fa scorrere la scala N sulla scala Psi può misurare una lunghezza L considerando l'inizio della scala P e fin dove ho si fa scorrere la scala N. Si può ora leggere quanto è in mm sulla  scala P, senza interpolare, si ha solo un numero intero in mm. Tuttavia la scala N potrebbe essere non esattamente sulla tacca del millimetro, quindi si ha uno scarto che è meno di un millimentro, chiamiamolo a.
+	Si può ora considerare l'equazione che indica che numero di tacca abbiamo da entrambi i lati N e P. se n è il numero della N, e p del P si ha:
+	n*d+a=p*D, dove si ignorano le parti intere che sono già valutate dalla lettura della scala P, n e p sono ovviamente interi, a un numero reale.
+	Adesso per semplificare le cose adimensionalizziamo l'equazione dividendola per D, che nel nostro caso è 1 mm: risulta n*r+a'=p, adesso se uno sceglie r come 1-q, con q piccolo (mettiamo 1/10), si ha n - q*n = p - a', adesso si può controllare quando si ha un ugnuaglianza fra interi a destra e a sinistra, cioè quando si hanno due linee di N e P allineate, ciò significa, procedendo solo per interi, la prima volta che c'è quest'uguaglianza significa che q*n ~ a', perchè abbiamo trovato un indice intero che soddisfa l'uguaglianza (almeno circa), quindi n e p devono essere uguali, come parti intere, e quindi anche la parte frazionaria deve essere uguali.
+	Non c'è bisogno che q sia una frazione proprio, infatti nella maggioranza dei calibri r è 49/10, in questo caso l'equazione diventa n*49/10 + a' = p, che implica, 5*n - n/10 = p - a', ora basta procedere di n in n, fino a quando si ha un uguaglianza con n e p interi, si ottiene lo stesso il valore di a'.
+	Per comprendere come avviene ciò è conveniente fare un disegno.
 	<figure>
-	<svg width="400" height="250">
-		<rect x="20" y="20" width="1" height="10"/>
-		<rect x="22" y="20" width="1" height="10"/>
-		<rect x="24" y="20" width="1" height="10"/>
-		<rect x="26" y="20" width="1" height="10"/>
-		<rect x="28" y="20" width="1" height="10"/>
-		<rect x="30" y="20" width="1" height="10"/>
-		<rect x="32" y="20" width="1" height="10"/>
-		<rect x="34" y="20" width="1" height="10"/>
-		<rect x="36" y="20" width="1" height="10"/>
-		<rect x="38" y="20" width="1" height="10"/>
-
-		</svg>
-		<figcaption>Fig1: Disegno del calibro a nonio</figcaption>
+	<img src="calibro.png" alt="Calibro verniero" width="500" title="Disegno di un calibro verniero"/>
+	<figcaption>Disegno di un calibro verniero, cioè a nonio. Da notare che la scala N ha tacche che sono distanti 9/10 della scala P.</figcaption>
 	</figure>
 	</p>
-
+<footer><p>Scritto da Tommaso Virgilii, libero.</p></footer>
 </body>
 </html>
