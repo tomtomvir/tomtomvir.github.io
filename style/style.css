@@ -1,7 +1,25 @@
 html {
-background-color: brown;
-color: whitesmoke;
+background-color: gray;
+color: #333333;
 }
 h1 {
 	color:red;
+	text-align: center;
+}
+
+body {
+background-color: mintcream;
+font-family: serif;
+max-width: 900px;
+margin:30px auto;
+padding: 40px;
+border: 1px solid black;
+}
+@media (max-width:820px){
+body{
+width: 95%;
+margin:10px;
+padding:15px 10px;
+}
+
 }
