@@ -1,16 +1,12 @@
 html {
-background-color: gray; /*gray;*/
+background-color: gray;
 color: #333333;
 }
 h1 {
-	color:#b80000;
+	color:red;
 	text-align: center;
 }
 
-h2 {
-	color:#b80000;
-
-}
 body {
 background-color: mintcream;
 font-family: serif;
