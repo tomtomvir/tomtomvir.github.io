@@ -4,31 +4,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8" >
 	<link rel='stylesheet' type='text/css' href='../style/style.css'>
-	<title>AI slop, TV's Web Site</title>
+	<title>TV's Web Site</title>
 </head>
 
 <body>
-	<a href="index_en.html">Home</a>
-	<h1>AI slop and search engines have destroyed the web</h1>
 
-	<h2>Introduction: the present state of the typical user experience of a web user (now more correctly web <i>used</i>)</h2>
-	<p>It is pretty clear that the Internet is not what it used to be. Now much of the web usage, done by a normal user, is a passive action. We log in into our personal accounts in a social media and we get shoved down our throats whatever the algorithm wants us to see. What was once called the web surfing, beware of the term used that has an aura connected to something extreme, active and hard like surfing, now is more of a web eating slop, a passive action, we are not consuming slops, but rather it consumes us.</p>
+	<p> אֶהְיֶה אֲשֶׁר אֶהְיֶה</p>
+    <h1>Tommaso Virgilii's Web Site</h1>
+    <p>Peace! Welcome!</p>
 
-	<p>So the mechanics of the reel, that was essentially popularized by TikTok in the middle 2010' is now omnipresent on every social media used by the masses. The algorithms have became better and better at selecting exactly what is more useful to steal time to the user, so the experience on the web is more entertaining, but more miserable.
-	Nothing makes sense in places like this social media, nothing in the real world even resembles vaguely the fast change of arguments one is now used to see on this horrendous machines.</p> 
-	<p>Still, even if you want to free yourself of social media, which usually is a net positive action, you cannot use properly the web because it is invaded by useless stuff, and there is no search engine good enough for this situation. The experience is such that only if you know exactly what to find you may find it, otherwise there is no chance to get more knowledgeable and smart on the web. So people are more and more reliant on the LLM, like gemini or ChatGPT, to get information on every topic. This big corporation owned LLM are becoming the ultimate arbiters of what is true, so that, for the vast majority of people, soon there will be no independent information in every subject. There is little to no philanthropy in these projects. If not clear by itself, indeed, I try to explain why these things are not morally good: the information you receive constrains what you think and so limits what you can do, the monopoly on truth is thus monopoly on freedom.</p>  
-	<h2>But AI is unstoppable, and it is a useful instrument</h2>
-	<p>I am a physics student in the process of becoming a physicist, so for me is clear that machine learning, that is the basis for AI, is a very useful tool, that has been used in scientific and diagnostic application since the '90.
-	Still we cannot deny that from the surge of LLM based chatbots something fundamental has changed. We can trace the most important changes we have assisted to in the last years since 2022:</p>
-	<ol>
-		<li>functioning chatbots have emerged in the consumer market, non human intellects that with an acceptable success probability, that has been increased with time, could answer to human questions like a human expert, but much faster and cheaper; </li>
-		<li>these chatbots have been popularized by an AI-fever that made people rush on every AI labeled product (voice, video, image generation software etc.);
-		</li>
-		<li>people have been polarized in pro-AI and anti-AI factions;</li>
-		<li>most importantly there is a perceived and effective depreciation of certain skills, in particular: coding, math problem solving, data analysis. In general intelligence is been more and more treated like a commodity, measurable in dollars like all commodities with an ever decreasing price.</li>
-	</ol>
-	<p>What can be done in order 
+    <p>This website is in maintenance for a complete rebuilding.</p>
 
+    <h2>What is this site?</h2>
+    <p>This web page is meant to be the main page of my personal website. My name is Tommaso Virgilii, I am a physics student based
+    in Rome, Italy. I love the internet culture, so i have decided to write an old stile web site in order to be a human on the web
+    that now is invaded by multiple non human agents. The AI slop era may be
+    the worse time to write on the web, but as it is said in the old saying: "hard times make strong men".
+    </p>
+    <p>Other than in physics I'm interested in philosophy and epistemology, but also in the Greco-roman world, in fact before university I attended "<i>liceo classico</i>", the classical high-school in Italy. I am also very found of studying religion (in particular Catholicism, which I practice).</p>
+    <p>Here you can find a list of arguments in this web site:</p>
+    <ol><li><a href="aiSlop_en.html">On the Internet dominated by AI slop.</a></li> 
+	    <li>
+	<a href="fft_en.html">On FFT</a>.
+    </ol>    
+    
+    <p>This site has also an <a href="../index.html">Italian part</a>, where i put more personal stuff that I have not traduced in English.</p>
     
     
     <p>Thanks for the attention, Aug. 2026, Rome, <i>Tommaso Virgilii</i>.</p>
