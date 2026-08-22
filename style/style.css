@@ -24,6 +24,14 @@ a:hover{color:red;}
 figure {
 text-align: center;
 }
+table {
+            border-collapse: collapse;
+            font-family: monospace;
+            text-align: right;
+        }
+th, td {
+            border: 1px solid black;
+        }
 @media (max-width:820px){
 body{
 width: 95%;

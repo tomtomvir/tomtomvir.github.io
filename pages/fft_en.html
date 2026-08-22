@@ -16,11 +16,73 @@
 	</p>
 	<h2>I forgot what FFT is...</h2>
 	<p>No problem <a href="pdf/fft.pdf">this is a small review on how FFT works</a>. Here are some simple c scripts that do <a href="scripts/ft.c" download>discrete FT</a>  and <a href="scripts/fft.c" download>fast FT</a>.
-	I would like to specify that these programs are made for didactic reasons, and because of dynamical memory allocation are very <strong>dangerous and slow</strong>. A real program would need bit reversal algorithm, and it is best to use a library program for the FFT (in C or python). 
+	I would like to specify that these programs are made for didactic reasons, and because of dynamical memory allocation are very <strong>dangerous and slow</strong>. A real program would need bit reversal algorithm , like <a href="scripts/fft_bit_rev.c" download>this bit reversal FFT</a>, and it is best to use a library program for the FFT (in C or python). In the following table you can get an idea of the speed up we are talking about, and how the professional libraries are far superior.
+	I also tried to make an optimized version of my program using LLM model "gemini Pro 3.1", it provided a slightly faster version than mine own.
 	</p>
 
-    
-    
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>DFT naive(ft.c)</th>
+                <th>FFT recursive (fft.c)</th>
+                <th>FFT bit reversal (fft_bit_rev.c)</th>
+                <th>FFT made by gemini Pro 3.1</th>
+                <th>FFTW3 (Library FFT)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>1.6456 ms</td>
+                <td>0.0225 ms</td>
+                <td>0.0072 ms</td>
+                <td>0.0044 ms</td>
+                <td>0.0011 ms</td>
+            </tr>
+            <tr>
+                <td>512</td>
+                <td>6.2565 ms</td>
+                <td>0.0613 ms</td>
+                <td>0.0163 ms</td>
+                <td>0.0096 ms</td>
+                <td>0.0015 ms</td>
+            </tr>
+            <tr>
+                <td>1024</td>
+                <td>25.8308 ms</td>
+                <td>0.1280 ms</td>
+                <td>0.0356 ms</td>
+                <td>0.0208 ms</td>
+                <td>0.0028 ms</td>
+            </tr>
+            <tr>
+                <td>2048</td>
+                <td>103.4527 ms</td>
+                <td>0.2703 ms</td>
+                <td>0.0768 ms</td>
+                <td>0.0459 ms</td>
+                <td>0.0058 ms</td>
+            </tr>
+            <tr>
+                <td>4096</td>
+                <td>393.7990 ms</td>
+                <td>0.5841 ms</td>
+                <td>0.1676 ms</td>
+                <td>0.1003 ms</td>
+                <td>0.0158 ms</td>
+            </tr>
+            <tr>
+                <td>8192</td>
+                <td>1575.2290 ms</td>
+                <td>1.3467 ms</td>
+                <td>0.3599 ms</td>
+                <td>0.2277 ms</td>
+                <td>0.0384 ms</td>
+            </tr>
+        </tbody>
+    </table>
+
     <p>Thanks for the attention, Aug. 2026, Rome, <i>Tommaso Virgilii</i>.</p>
 </body>
 </html>
